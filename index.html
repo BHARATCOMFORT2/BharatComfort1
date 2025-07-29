@@ -3,44 +3,122 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BharatComfort - Hotel & Restaurant Promotions</title>
+  <title>BharatComfort</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      margin: 0; padding: 0;
-      background: #f8f8f8;
+      background-color: #ffffff;
+      color: #1F2937;
     }
+
     header {
-      background-color: #2b2b2b;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    nav a {
-      margin: 0 15px;
-      color: #fff;
-      text-decoration: none;
-    }
-    .hero {
-      background: url('https://source.unsplash.com/1600x600/?restaurant,hotel') center/cover no-repeat;
-      height: 60vh;
+      background-color: #1E3A8A;
+      color: #ffffff;
+      padding: 1rem 2rem;
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: 2em;
-      font-weight: bold;
-      text-shadow: 2px 2px 4px #000;
     }
-    .section {
-      padding: 40px;
+
+    header h1 {
+      font-size: 1.8rem;
+    }
+
+    nav a {
+      color: #ffffff;
+      margin-left: 1rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .hero {
+      padding: 4rem 2rem;
+      text-align: center;
+      background-color: #60A5FA;
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero button {
+      padding: 0.7rem 1.5rem;
+      background-color: #1E3A8A;
+      border: none;
+      color: white;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+
+    .about {
+      padding: 3rem 2rem;
+      max-width: 800px;
+      margin: auto;
       text-align: center;
     }
-    footer {
-      background-color: #2b2b2b;
-      color: white;
+
+    .featured {
+      padding: 3rem 2rem;
+      background-color: #f9fafb;
+    }
+
+    .featured h3 {
       text-align: center;
-      padding: 20px;
+      margin-bottom: 2rem;
+      font-size: 1.5rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background-color: white;
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .insta-banner {
+      text-align: center;
+      background-color: #1E3A8A;
+      color: white;
+      padding: 2rem;
+      margin-top: 2rem;
+    }
+
+    .footer {
+      background-color: #111827;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 1.5rem;
+      }
     }
   </style>
 </head>
@@ -50,24 +128,50 @@
     <h1>BharatComfort</h1>
     <nav>
       <a href="#">Home</a>
-      <a href="#">Services</a>
-      <a href="#">Gallery</a>
-      <a href="#">Clients</a>
+      <a href="#">Listings</a>
       <a href="#">Contact</a>
     </nav>
   </header>
 
-  <div class="hero">
-    Discover & Promote Beautiful Hotels & Restaurants
-  </div>
+  <section class="hero">
+    <h2>Feel all the comforts with BharatComfort</h2>
+    <p>Discover amazing hotels and restaurants across India.</p>
+    <button>View Listings</button>
+  </section>
 
-  <div class="section">
-    <h2>Welcome to BharatComfort</h2>
-    <p>We specialize in promoting hotels and restaurants across India through stunning visuals, engaging content, and digital strategies.</p>
-  </div>
+  <section class="about">
+    <h3>About Us</h3>
+    <p>BharatComfort is your trusted platform to explore the finest hotels and restaurants across India. Whether you're looking for luxury, budget-friendly, or hidden gems — we bring you the best picks with comfort and quality.</p>
+  </section>
 
-  <footer>
-    &copy; 2025 BharatComfort | Made with ❤️ in India
+  <section class="featured">
+    <h3>Featured Places</h3>
+    <div class="grid">
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?hotel" alt="Hotel">
+        <h4>Hotel Royal Stay</h4>
+        <p>Patna, Bihar</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?restaurant" alt="Restaurant">
+        <h4>Spice Delight</h4>
+        <p>Gaya, Bihar</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?resort" alt="Resort">
+        <h4>Lakeview Resort</h4>
+        <p>Ranchi, Jharkhand</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="insta-banner">
+    <h3>Follow us on Instagram</h3>
+    <p>@BharatComfort</p>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 BharatComfort. All rights reserved.</p>
   </footer>
 
 </body>
