@@ -1,0 +1,4 @@
+<header style="display: flex; align-items: center; gap: 15px; padding: 20px;">
+  <img src="logo.png" alt="BharatComfort Logo" style="height: 70px; border-radius: 50%;">
+  <h1 style="font-size: 2rem; color: #2c3e50;">BharatComfort</h1>
+</header>
