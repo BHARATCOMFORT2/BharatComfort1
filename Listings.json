@@ -1,0 +1,24 @@
+{
+  "Patna": [
+    {
+      "name": "Hotel Patliputra Continental",
+      "address": "Anisabad, Patna",
+      "image": "images/patliputra.jpg"
+    },
+    {
+      "name": "Restaurant Spice Court",
+      "address": "Boring Road, Patna",
+      "image": "images/spicecourt.jpg"
+    }
+  ],
+  "Delhi": [
+    {
+      "name": "The Lalit",
+      "address": "Connaught Place, Delhi",
+      "image": "images/lalit.jpg"
+    }
+  ],
+  "Mumbai": [],
+  "Kolkata": [],
+  "Bengaluru": []
+}
